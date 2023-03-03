@@ -20,7 +20,7 @@
         <li><a href="#Home">Inicio</a></li>
         <li><a href="#Biografia">Biografia</a></li>
         <li><a href="#Carrera">Carrera</a></li>
-        <li><a href="#Portafolio">Galeria</a></li>
+        <li><a href="#Galeria">Galeria</a></li>
         <li><a href="#Contactos">Contactos</a></li>
         <div class="toggle"></div>
       </ul>
@@ -31,10 +31,11 @@
 <section class="home" id="Home">
     <div class="home-text" data-aos="fade-down-right">
         <h4>Dua Lipa</h4>
-       <h1>Dua Lipa es<span>T</span>he Queen<br> <span>F</span>or Pop</h1>
+       <h1>Dua Lipa is
+       <span>T</span>he Queen<span>F</span>or Pop</h1>
       <h3>Vive, Disfruta y Sonrrie</h3>
        <a href="#" class="btn">Inicia Sesion</a> 
-       <a href="#" class="btn2">Registrate</a>  
+       <!-- <a href="#" class="btn2">Registrate</a> -->  
     </div>
     <div data-aos="fade-down-left">
        <img src="img/img-inicio.png">
@@ -69,7 +70,7 @@
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
    </div>
    <div class="carrera-img" data-aos="fade-down-right">
         <img src="img/carrera.png">
@@ -78,44 +79,68 @@
 
 <!-- GALERIA -->
 
+<section class="galeria" id="Galeria">
+<div class="todo-img" id="imgcaja">
+    <img src="img/galeria1.jpg" id="todoimg" alt="">
+    <span onclick="closeImg()">X</span>
+</div>
 
+<h1>Galeria</h1>
+<div class="img-galeria">
+    <img src="img/galeria1.jpg" onclick="openTodoImg(this.src)">
+    <img src="img/galeria2.jpg" onclick="openTodoImg(this.src)">
+    <img src="img/galeria3.jpg" onclick="openTodoImg(this.src)">
+    <img src="img/galeria4.jpg" onclick="openTodoImg(this.src)">
+    <img src="img/galeria5.jpg" onclick="openTodoImg(this.src)">
+    <img src="img/galeria6.jpg" onclick="openTodoImg(this.src)">
+</div>
+</section>
 
+<!-- CONTACTOS -->
 
+<section class="contactos" id="Contactos">
+    <div class="contactos-text">
+    <h2>Contactos</h2>
+        <h2>Angel Martinez</h2>
+        <h4>Programar, Diseñador y Gamer</h4>
+        <p>Me gusta el cilencio asi que no hagas rruido</p>
+        <div class="contactos-list">
+            <li><a href="#">Venezuela - San Felipe - Yaracuy</a></li>
+            <li><a href="#">angeldavidm1903@gmail.com</a></li>
+            <li><a href="#">+58 414 5482539</a></li>
+        </div>
+        <div class="contactos-icon">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+    </div>
 
+<!-- CONTACTOS-FORMULARIO -->
+    
+    <div class="contactos-form">
+        <form action="">
+            <input type="text" name="nombre" placeholder="Ingrese su Nombre" required="">
+            <input type="email" name="gmail" placeholder="Ingrese su Correo" required="">
+            <input type="" name="tema" placeholder="Ingrese Tema" required="">
+            <textarea name="mensaje" id="mensaje" cols="40" rows="10" placeholder="Envianos tu Mensaje" required=""></textarea>
+            <input type="submit" value="Enviar" class="boton">
+        </form>
+    </div>
+</section>
 
+<!-- SCROLL -->
 
+<a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
+<!-- FOOTER -->
 
-
-
-
-
-
-
-
-
-
-<
-
-<!-- <footer>
+<footer>
 	Derechos Reservados &copy; 2022 <br>
 	Diseñado por: Angel martinez <br>
 	Email: angeldavidm1903@gmail.com <br>
-
-	<div class="iconos">
-                <div class="border-icon">
-                    <a href="instagram.com"><i class='bx bxl-instagram bx-burst-hover'></i></a> 
-                </div>
-                <div class="border-icon">
-                    <a href="youtebe.com"><i class='bx bxl-youtube bx-burst-hover'></i></a>
-                </div>
-                <div class="border-icon">
-                   <a href="facebook.com"> <i class='bx bxl-facebook-circle bx-burst-hover' ></i></a>
-                </div>
-            </div>
 </footer>
- -->
- -->
+
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -29,3 +29,30 @@ const body = document.querySelector('body')
 
 toggle.addEventListener("click", () => toggle.classList.toggle('active'))
 /*MODO DARK*/
+
+/*GALERIA*/
+
+const imgcaja = document.getElementById("imgcaja"),
+todoimg = document.getElementById("todoimg");
+
+function openTodoImg(referenc) {
+	// body...
+	imgcaja.style.display = "flex";
+	todoimg.src = referenc;
+}
+
+function closeImg() {
+	// body...
+	imgcaja.style.display = "none";
+}
+
+/*GALERIA*/
+
+
+
+
+
+
+
+
+

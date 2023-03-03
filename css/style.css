@@ -41,11 +41,12 @@ body.dark{
 }
 
 .dark .btn{
-	border: 1px solid #fff;
+	border: 1px solid #7900ac;
 }
 
 .dark .btn:hover{
 	border: 1px solid #7900ac;
+	color: #fff;
 }
 
 .dark .btn2{
@@ -55,7 +56,7 @@ body.dark{
 
 .dark .btn2:hover{
 	background: #7900ac;
-	border: 1px solid #fff;
+	border: 1px solid #7900ac;
 }
 
 .dark .biografia-text p{
@@ -65,6 +66,32 @@ body.dark{
 .dark .carrera-text p{
 	color: #fff;
 }
+
+.dark .galeria h1{
+	color: #fff;
+}
+
+.dark .contactos-text h4{
+	color: #fff;
+}
+
+.dark .contactos-text p{
+	color: #fff;
+}
+
+.dark .contactos-text li a{
+	color: #fff;
+}
+
+.dark .contactos-form .boton{
+	border: 2px solid #7900ac;
+}
+
+.dark .contactos-form .boton:hover{
+	border: 2px solid #7900ac;
+	color: #fff;
+}
+
 
 /*BODY DARK*/
 
@@ -168,16 +195,16 @@ header.abajo{
 /*HOME*/
 
 section{
-	padding: 50px 5% 30px;
+	width: 90%;
+	margin: 50px auto 50px;
 }
 
 .home{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 100%;
+	width: 90%;
 	height: 100vh;
-	width: 100%;
 	position: relative;
 	/*background: #f2f2f2;*/
 	/*background-size: cover;
@@ -208,7 +235,7 @@ section{
 
 .home-text h4{
 	color: black;
-	font-size: 24px;
+	font-size: 28px;
 	font-weight: 600;
 	cursor: pointer;
 }
@@ -275,8 +302,7 @@ section{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 100%;
-
+	width: 90%;
 }
 
 .biografia-img img{
@@ -288,9 +314,9 @@ section{
 	margin: 120px;
 }
 
-.biografia-text{
+/*.biografia-text{
 	padding: 0 30px;
-}
+}*/
 
 .biografia-text h3{
     color: #7900ac;
@@ -315,8 +341,8 @@ section{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 100%;
-
+	width: 90%;
+	padding: 30px;
 }
 
 .carrera-img img{
@@ -348,59 +374,407 @@ section{
 
 /*GALERIA*/
 
+.galeria{
+	padding: 40px;
+}
 
+h1{
+	text-align: center;
+	position: relative;
+	width: 90%;
+	margin: 50px auto;
+	color: #7900ac;
+	font-weight: 600;
+	font-size: 40px;
+}
 
+.img-galeria{
+	width: 90%;
+	margin: 50px auto 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+	gap: 30px;
+}
 
+.img-galeria img{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transition: 1s;
+}
 
+.img-galeria img:hover{
+	transform: scale(1.1);
+}
 
+.todo-img{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 99;
+}
 
+.todo-img img{
+	width: 100%;
+	max-width: 700px;
+}
 
+.todo-img span{
+	position: absolute;
+	top: 15%;
+	right: 10%;
+	font-weight: 600;
+	font-size: 35px;
+	color: #fff;
+	cursor: pointer;
+}
 
+/*CONTACOS-MY*/
 
+/*CONTACTOS*/
 
+.contactos{
+	display: grid;
+	grid-template-columns:repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+	width: 80%;
+	margin-top: 100px;
+	margin: 0 150px;
+}
 
+.contactos-text h4{
+	margin: 15px 0;
+	color: #333;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+}
 
+.contactos-text h2{
+	font-size: 2rem;
+	color: #7900ac;
+	cursor: pointer;
+}
+
+.contactos-text p{
+	color: black;
+	font-size: 1rem;
+	line-height: 30px;
+	margin-bottom: 1.5rem;
+	cursor: pointer;
+}
+
+.contactos-list{
+	margin-bottom: 3rem;
+}
+
+.contactos-list li{
+	margin-bottom: 10px;
+	display: block;
+}
+
+.contactos-list li a{
+	display: block;
+	color: #333;
+	font-size: 1rem;
+	font-weight: 600;
+	transition: all .40s ease;
+}
+
+.contactos-list li a:hover{
+	transform: scale(1.01) translateY(-5px);
+	cursor: pointer;
+	color: #7900ac;
+}
+
+.contactos-icon i{
+	width: 40px;
+	height: 40px;
+	background: #7900ac;
+	border-radius: 20px;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	margin-right: 10px;
+	transition: all .40s ease;
+}
+
+.contactos-icon i:hover{
+	transform: scale(1.01) translateY(-5px);
+	cursor: pointer;
+}
+
+/*CONTACTOS-FORMULARIO*/
+
+.contactos-form form{
+	position: relative;
+}
+
+.contactos-form form input, form textarea{
+	border: 2px solid #7900ac;
+	width: 100%;
+	padding: 18px;
+	background: transparent;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	border-radius: 30px; 
+	color: black;
+}
+
+.contactos-form textarea{
+	resize: none;
+	height: 220px;
+}
+
+.contactos-form .boton{
+	margin-top: 5px;
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 600;
+	background: #7900ac;
+	color: #fff;
+	border: 2px solid black;
+	width: 190px;
+	transition: all .40s ease;
+	cursor: pointer;
+}
+
+.contactos-form .boton:hover{
+	transform: scale(1.01) translateY(-5px);
+	border: 2px solid black;
+	background: transparent;
+	color: black;
+}
+
+/*SCROLL*/
+
+.top{
+	position: fixed;
+	bottom: 2.5rem;
+	right: 2.5rem;
+}
+
+.top i{
+	color: #fff;
+	background: #7900ac;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 1s;
+}
+
+/*FOOTER*/
 
 footer {
 	width: 100%;
-	background: #6214C4;
+	background: #f2f2f2;
+	border-top: 2px solid #7900ac;
 	margin: 0 auto;
-	border-radius: 0 0 20px 20px;
-	color: #fff;
+	color: #333;
 	text-align: center;
 	padding: 30px;
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
+	margin-top: 15PX;
 }
 
-footer .iconos {
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: 10px;
+
+/*ADAPTACION-A-MOVIL*/
+
+@media (max-width: 1325px) {
+	header{
+		padding: 18px auto 60px;
+	}
+
+	section{
+		margin: 130px 60px;
+	}
+
+	.home img{
+		width: 250px;
+		margin: 0 50px;	
+	}
+
+	.home-text{
+		padding: 0 80px;
+	}
+
+	.home img{
+		width: 250px;
+		margin: 0 20px;
+		padding: 0 10px;	
+	}
+
+	.biografia img{
+		width: 250px;
+		margin-top: 1em;
+		margin: 10px;
+	}
+
+	.carrera img{
+		width: 250px;
+		margin-top: 1em;
+		margin: 10px;
+	}
+
 }
 
-footer .border-icon {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    border: solid thin rgb(0, 0, 0);
-    border-radius: 50%;
-    font-size: 1.5rem;
-    transition: all .3s ease-in;
-    background-color: #fff;
+@media (max-width: 1000px){
+	
+.biografia{
+		flex-direction: column;
+	}
+
+	.biografia-text h3{
+		text-align: center;
+		padding: 20px;
+	}
+
+	.carrera{
+		flex-direction: column-reverse;
+	}
+
+	.carrera-text h3{
+		text-align: center;
+		padding: 20px;
+	}
+
+	.carrera-text p{
+		padding: 0;
+	}
+
+	.galeria{
+	padding: 0px;
+    }
+
+    .menu-nav a{
+    	padding: 5px 10px;
+    }
+}
+
+@media (max-width: 850px){
+	
+	.menu-nav{
+	display: none;
+}
+
+    .home-text{
+	padding: 0;
+}
+
+    .home-text h2{
+	margin: 10px;
+}
+
+    .home-text h4{
+    	font-size: 23px;
+    	margin: 10px;
+    }
+
+    .home-text h1{
+    	font-size: 2rem;
+    }
+
+    .logo{
+    	margin: 0 20px;
+    }
+}
+
+@media (max-width: 630px){
+	.contactos{
+		grid-template-columns: 1fr;
+		margin: 0 80px;
+	}
+
+	.contactos-text h4{
+	font-size: 18px;
+}
+
+.contactos-text h2{
+	font-size: 1.5rem;
+}
+
+}
+
+@media (max-width: 530px){
+	
+	.home{
+		flex-direction: column-reverse;
+	}
+
+	/*.biografia-text h3{
+		padding: 0;
+		margin: 0;
+	}
+
+	.carrera{
+		flex-direction: column-reverse;
+	}
+
+	.carrera-text h3{
+		padding: 0;
+		margin: 0;
+	}
+
+	.carrera-text p{
+		padding: 0;
+		margin: 0;
+	}
+*/
     
 }
 
-footer .border-icon:hover {
-    background-color:#B890E8;
-    cursor: pointer;
 }
+
+
+
+
+
+
+/*MENU_HAMBURGUESA*/
+
+
+
+
+
+
+
+
+
+
+/*GALERIA-ADAPTACION*/
+
+@media screen and (max-width: 400px){
+	h1{
+		text-decoration: underline;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
