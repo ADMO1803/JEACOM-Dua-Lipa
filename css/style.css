@@ -311,12 +311,8 @@ section{
  	margin: auto;
  	display: block;
 	margin-top: 3em;
-	margin: 120px;
-}
-
-/*.biografia-text{
 	padding: 0 30px;
-}*/
+}
 
 .biografia-text h3{
     color: #7900ac;
@@ -335,6 +331,7 @@ section{
 	padding: 0 60px;
 }
 
+
 /*CARRERA MUSICAL*/
 
 .carrera{
@@ -342,7 +339,6 @@ section{
 	justify-content: space-around;
 	align-items: center;
 	width: 90%;
-	padding: 30px;
 }
 
 .carrera-img img{
@@ -351,15 +347,14 @@ section{
  	margin: auto;
  	display: block;
 	margin-top: 3em;
-	padding: 0 -60px;
+	padding: 0 -120px;
 }
 
 .carrera-text h3{
-    margin: 10px 20px;
     color: #7900ac;
     font-size: 2rem;
     font-weight: 600;
-    padding: 0 100px;
+    padding: 0 60px;
 }
 
 .carrera-text p{
@@ -369,7 +364,7 @@ section{
 	font-size: 1rem;
 	line-height: 30px;
 	margin-bottom: 20px;
-	padding: 0 100px;
+	padding: 0 60px;
 }
 
 /*GALERIA*/
@@ -642,6 +637,10 @@ footer {
 		padding: 20px;
 	}
 
+	.biografia-text p{
+		padding: 0;
+	}
+
 	.carrera{
 		flex-direction: column-reverse;
 	}
@@ -662,10 +661,18 @@ footer {
     .menu-nav a{
     	padding: 5px 10px;
     }
+
+    .contactos{
+		margin: 0 100px;
+	}
 }
 
 @media (max-width: 850px){
 	
+    section{
+		padding: 30px 20px;
+	}
+
 	.menu-nav{
 	display: none;
 }
@@ -690,6 +697,8 @@ footer {
     .logo{
     	margin: 0 20px;
     }
+
+    
 }
 
 @media (max-width: 630px){
@@ -702,9 +711,13 @@ footer {
 	font-size: 18px;
 }
 
-.contactos-text h2{
+    .contactos-text h2{
 	font-size: 1.5rem;
-}
+    }
+
+    footer{
+		margin: 0 50px;
+	}
 
 }
 
@@ -714,27 +727,21 @@ footer {
 		flex-direction: column-reverse;
 	}
 
-	/*.biografia-text h3{
-		padding: 0;
-		margin: 0;
+	.contactos{
+		grid-template-columns: 1fr;
+		margin: 0 60px;
 	}
 
-	.carrera{
-		flex-direction: column-reverse;
+	footer{
+		font-size: 13px;
+		margin: 0 50px;
 	}
 
-	.carrera-text h3{
-		padding: 0;
-		margin: 0;
+	.top{
+		right: 2.8rem;
+		bottom: 3.2rem;
 	}
 
-	.carrera-text p{
-		padding: 0;
-		margin: 0;
-	}
-*/
-    
-}
 
 }
 
