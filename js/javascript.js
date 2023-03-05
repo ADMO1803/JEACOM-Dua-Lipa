@@ -48,6 +48,37 @@ function closeImg() {
 
 /*GALERIA*/
 
+/*MENU*/
+
+const menu = document.querySelector("#menu-icon");
+const menunav = document.querySelector(".menu-nav");
+
+menu.addEventListener("click", ()=>{
+	menunav.classList.toggle("active")
+})
+
+menunav.addEventListener("click", ()=>{
+	menunav.classList.remove("active")
+})
+
+/*MENU*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

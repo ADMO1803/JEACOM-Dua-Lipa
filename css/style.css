@@ -92,6 +92,18 @@ body.dark{
 	color: #fff;
 }
 
+.dark footer{
+	background: #7900ac;
+	color: #fff;
+	border-top: 2px solid #af69cd;
+}
+
+.dark .top i{
+	color: #7900ac;
+	background: #fff;
+}
+
+
 
 /*BODY DARK*/
 
@@ -136,6 +148,7 @@ header.abajo{
 
 .menu-nav{
 	display: flex;
+	margin-top: 10px;
 }
 
 .menu-nav a {
@@ -204,7 +217,6 @@ section{
 	justify-content: space-around;
 	align-items: center;
 	width: 90%;
-	height: 100vh;
 	position: relative;
 	/*background: #f2f2f2;*/
 	/*background-size: cover;
@@ -441,7 +453,7 @@ h1{
 	gap: 3rem;
 	width: 80%;
 	margin-top: 100px;
-	margin: 0 150px;
+	margin: auto;
 }
 
 .contactos-text h4{
@@ -632,6 +644,10 @@ footer {
 		flex-direction: column;
 	}
 
+	.biografia{
+		margin: auto;
+	}
+
 	.biografia-text h3{
 		text-align: center;
 		padding: 20px;
@@ -643,6 +659,7 @@ footer {
 
 	.carrera{
 		flex-direction: column-reverse;
+		margin: auto;
 	}
 
 	.carrera-text h3{
@@ -655,7 +672,8 @@ footer {
 	}
 
 	.galeria{
-	padding: 0px;
+	padding: 0;
+	margin: auto;
     }
 
     .menu-nav a{
@@ -663,7 +681,7 @@ footer {
     }
 
     .contactos{
-		margin: 0 100px;
+		margin: auto;
 	}
 }
 
@@ -698,16 +716,40 @@ footer {
     	margin: 0 20px;
     }
 
-    
-}
+    /*HAMBUERGUEASA*/
+     
+    #menu-icon{
+    	display: block;
+    }
 
-@media (max-width: 630px){
-	.contactos{
-		grid-template-columns: 1fr;
-		margin: 0 80px;
-	}
+    .menu-nav{
+    	position: absolute;
+    	width: 250px;
+    	top: -600px;
+    	right: 0;
+    	left: 0;
+    	display: flex;
+    	flex-direction: column;
+    	background: #7900ac;
+    	text-align: left;
+    	transition: all .2s;
+    }
 
-	.contactos-text h4{
+    .menu-nav a{
+    	display: block;
+    	padding: 1rem;
+    	margin: 1rem;
+    }
+
+    .menu-nav .toggle{
+    	margin: 2rem;
+    }
+
+    .menu-nav.active{
+    	top: 85%;
+    }
+
+    .contactos-text h4{
 	font-size: 18px;
 }
 
@@ -715,8 +757,12 @@ footer {
 	font-size: 1.5rem;
     }
 
-    footer{
-		margin: 0 50px;
+   
+}
+
+@media (max-width: 800px){
+	.contactos{
+		grid-template-columns: 1fr;
 	}
 
 }
@@ -734,13 +780,30 @@ footer {
 
 	footer{
 		font-size: 13px;
-		margin: 0 50px;
+		margin: auto;
 	}
 
 	.top{
-		right: 2.5rem;
-		bottom: 2.5rem;
+		right: 1.5rem;
+		bottom: 3rem;
 	}
+
+	.todo-img{
+		height: 100%;
+	}
+
+	#menu-icon{
+		margin: 0 20px;
+	}
+
+	.logo{
+		margin: 0 -20px;
+	}
+
+	.home{
+		margin: auto;
+	}
+
 
 
 }
