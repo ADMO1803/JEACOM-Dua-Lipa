@@ -804,6 +804,26 @@ footer {
 		margin: auto;
 	}
 
+	.top{
+		display: none;
+	}
+
+	.home img{
+		margin-top: 3em;
+	}
+
+	.menu-nav a{
+		margin: 0.5rem;
+		padding: 0.5rem;
+	}
+
+	.menu-nav .toggle{
+		margin: 1rem;
+	}
+
+	.contactos{
+		margin: 0 20px;
+	}
 
 
 }
