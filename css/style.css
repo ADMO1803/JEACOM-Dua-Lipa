@@ -103,6 +103,14 @@ body.dark{
 	background: #fff;
 }
 
+.dark .contactos-form form input, form textarea{
+	color: #fff;
+}
+
+.dark .contactos-form textarea{
+	color: #fff;
+}
+
 
 
 /*BODY DARK*/
@@ -713,13 +721,15 @@ footer {
     }
 
     .logo{
-    	margin: 0 20px;
+    	margin: 0 10px;
     }
 
     /*HAMBUERGUEASA*/
      
     #menu-icon{
     	display: block;
+    	margin-top: 10px;
+    	margin: 0 30;
     }
 
     .menu-nav{
@@ -792,12 +802,8 @@ footer {
 		height: 100%;
 	}
 
-	#menu-icon{
-		margin: 0 20px;
-	}
-
 	.logo{
-		margin: 0 -20px;
+		margin: 0 -30px;
 	}
 
 	.home{
@@ -823,6 +829,14 @@ footer {
 
 	.contactos{
 		margin: 0 20px;
+	}
+
+	.logo{
+		font-size: 15px;
+	}
+
+	.logo span{
+		font-size: 1.5rem;
 	}
 
 
