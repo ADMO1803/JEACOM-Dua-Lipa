@@ -8,6 +8,11 @@
 	list-style: none;
 }
 
+html,body{
+	width: 100%!important;
+	overflow-x: hidden!important;
+}
+
 body {
 	background: #f2f2f2;
 	font-family: 'Open Sans', sans-serif;
@@ -810,10 +815,6 @@ footer {
 		margin: auto;
 	}
 
-	.top{
-		display: none;
-	}
-
 	.home img{
 		margin-top: 3em;
 	}
@@ -838,6 +839,11 @@ footer {
 	.logo span{
 		font-size: 1.5rem;
 	}
+
+	 #menu-icon{
+	 	margin: 0 -30px;
+	 	margin-top: 10px;
+	 }
 
 
 }
